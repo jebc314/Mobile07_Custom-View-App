@@ -29,9 +29,9 @@ public class CustomView extends View {
     float leafSize = getWidth() / 40f;
 
     // ground leaves
-    float[] groundx = new float[1000];
-    float[] groundy = new float[1000];
-    int[] groundcolors = new int[1000];
+    float[] groundx = new float[900];
+    float[] groundy = new float[900];
+    int[] groundcolors = new int[900];
 
     //ranges for leaves on trees
     float xrange;
@@ -56,9 +56,9 @@ public class CustomView extends View {
         treey[2] = new float[400];
         treecolors[2] = new int[400];
         // tree 3
-        treex[3] = new float[50];
-        treey[3] = new float[50];
-        treecolors[3] = new int[50];
+        treex[3] = new float[60];
+        treey[3] = new float[60];
+        treecolors[3] = new int[60];
     }
 
     @Override
@@ -73,6 +73,7 @@ public class CustomView extends View {
         // leaves position ranges
         double xrange = getWidth();
         double yrange = getHeight() / 2d;
+        leafSize = getWidth() / 40f;
         double yshift = getHeight() / 2d + leafSize;
         // ground leaf position
         for (int i = 0; i < groundx.length; i++) {
